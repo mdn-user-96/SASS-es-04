@@ -1,0 +1,4 @@
+@function conversion($valoreCheCambia, $pixel: 16px) {
+    $remReturn: $valoreCheCambia / $pixel;
+    @return $remReturn+rem;
+}

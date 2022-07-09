@@ -1,0 +1,29 @@
+@use'variable';
+@import'function';
+div {
+    border: conversion(1px) solid variable.$red01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: conversion(variable.$padding);
+    display: flex;
+    flex-direction: column;
+    gap: conversion(15px);
+    h1 {
+        @include variable.title;
+    }
+    section {
+        display: flex;
+        .art01,
+        .art03 {
+            @include variable.article (variable.$blue03, variable.$green02, conversion(15px))
+        }
+        .art02,
+        .art04 {
+            @include variable.article (variable.$red01, variable.$green02, conversion(15px))
+        }
+        .art05 {
+            @include variable.article (variable.$green02, variable.$blue03, conversion(24px))
+        }
+    }
+}

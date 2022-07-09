@@ -1,0 +1,18 @@
+    @import 'function';
+    $red01: red;
+    $green02: green;
+    $border1px: conversion(1px);
+    $blue03: blue;
+    $padding: conversion(15px);
+    @mixin title () {
+        color: $green02;
+        border-bottom: 1px solid blue
+    }
+    
+    @mixin article ($color, $border-color, $font-size) {
+        color: $color;
+        border: conversion(1px) solid;
+        border-color: $border-color;
+        font-size: $font-size;
+        padding: conversion(15px)
+    }
