@@ -1,5 +1,5 @@
-@use'variable';
-@import'function';
+@import'variable',
+'function';
 div {
     border: conversion(1px) solid variable.$red01;
     display: flex;
